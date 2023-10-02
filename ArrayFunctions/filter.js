@@ -14,3 +14,8 @@ for(i=0; i < arr.length; i++) {
         console.log(arr[i]);
     }
 }
+
+const evenSum = arr.filter((ele) => ele % 2 ===0)
+    .reduce((sum,cur) => sum+cur, 0);
+console.log("evenSum is ", evenSum);
+
