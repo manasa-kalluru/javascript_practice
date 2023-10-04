@@ -29,3 +29,13 @@ const evenSumWithReduce = arr.reduce( (sum,cur) => {
 console.log("evenSumWithReduce is ", evenSumWithReduce);
 
 //console.log("sumArr is ", sumArr);
+
+// an array of strings, use reduce() to concatenate all the strings into a single string
+
+const stringArray = ["Hello", " ", "world"];
+
+const concatenatedString = stringArray.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, "");
+
+console.log(concatenatedString);
