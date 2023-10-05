@@ -34,8 +34,8 @@ console.log("evenSumWithReduce is ", evenSumWithReduce);
 
 const stringArray = ["Hello", " ", "world"];
 
-const concatenatedString = stringArray.reduce((accumulator, currentValue) => {
-  return accumulator + currentValue;
+const concatenatedString = stringArray.reduce((acc, cur) => {
+  return acc + cur;
 }, "");
 
 console.log(concatenatedString);
